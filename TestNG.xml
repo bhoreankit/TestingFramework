@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Suite name="HybridPageObjectModel">
+	<Test>
+	<parameter name="browser" value="chrome"/>
+		<Classes>
+			<Class name="TestCases.TC_LoginTest_001"></Class>
+		</Classes>
+	</Test>
+</Suite>
