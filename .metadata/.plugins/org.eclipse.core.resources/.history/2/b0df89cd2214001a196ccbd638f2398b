@@ -1,0 +1,11 @@
+package Package1;
+
+public abstract class Bike {
+	
+	abstract void run();
+	
+	void changeGear() {
+		
+		System.out.println("gear changed");
+	}
+}

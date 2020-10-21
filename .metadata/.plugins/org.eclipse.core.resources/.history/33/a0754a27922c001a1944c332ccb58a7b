@@ -1,0 +1,25 @@
+package Package1;
+
+public class CountCharacterOccurence {
+	
+	public static void main(String[] args)
+    {
+       String string=new String("Hi i am ankit");
+       
+       char ch='a';
+       //String str=Character.toString(ch);
+       
+       // str="am";
+       int count=0;
+       for (int i = 0; i < string.length(); i++) {
+		if(ch==(string.charAt(i))) {
+			
+			count++;
+			
+		}
+	}
+      System.out.println(count); 
+       
+    }
+
+}

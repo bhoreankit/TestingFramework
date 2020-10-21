@@ -1,0 +1,15 @@
+package Package1;
+
+public class CountCharacterOccurence1 {
+
+	public static void main(String[] args) {
+		
+		String s=new String("I am ankit bhore akola");
+		
+		int count=(s.length())-(s.replace("a", "").length());
+		System.out.println(count);
+		
+		
+	}
+
+}

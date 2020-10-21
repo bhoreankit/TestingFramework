@@ -1,0 +1,23 @@
+package Package1;
+
+public class MyMethods {
+	
+	public void printArray(String[] s) {
+		
+		for (int i = 0; i < s.length; i++) {
+			
+			System.out.println(s[i]);
+		}
+		
+	}
+		
+	public static void main(String[] args) {
+	
+	MyMethods m1=new MyMethods();
+	
+	String countries[]={"India","China","nepal"};
+	
+	m1.printArray(countries);
+				
+	}
+}

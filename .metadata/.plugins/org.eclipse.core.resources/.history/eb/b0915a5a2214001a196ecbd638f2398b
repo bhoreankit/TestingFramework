@@ -1,0 +1,12 @@
+package Package1;
+
+public class ExecutionEngine {
+
+	public static void main(String[] args) {
+		Vehicle v=new Vehicle();
+		System.out.println(v.setMaxSpeed());
+		
+
+	}
+
+}

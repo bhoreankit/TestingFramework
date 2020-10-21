@@ -1,0 +1,16 @@
+package Package1;
+
+public class Practice {
+
+	public static void main(String[] args) {
+		String s="ankit";
+		String a="bhore";
+		
+		String p=s.concat(a);
+		System.out.println(p);
+		s=p.substring(5,9);
+		System.out.println(s);
+									
+	}
+
+}

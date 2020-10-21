@@ -1,0 +1,12 @@
+package Package1;
+
+public class Vehicle {
+	
+	public void setMaxSpeed() {
+		
+		Constant.maxSpeed=120;
+
+	}
+	
+
+}

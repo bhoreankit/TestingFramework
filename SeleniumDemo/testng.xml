@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testing Shastra">
+		
+  <test thread-count="5" name="ModuleA">
+  <parameter name="rollno" value="11"/>
+  <parameter name="ankit" value="14"/>
+  <groups>
+  <run>
+  	<include name="smoketest"></include>
+  	</run>
+  </groups>
+  
+    <classes>
+      <class name="FirstSeleniumTest.GroupA"/>
+      <class name="FirstSeleniumTest.GroupB"/>
+      <class name="FirstSeleniumTest.GroupC"/>       
+        
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

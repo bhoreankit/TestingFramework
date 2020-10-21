@@ -1,0 +1,16 @@
+package Package1;
+
+public class AccuranceOfHi {
+
+	public static void main(String[] args) {
+		String string="Hi i am ankit. Hi i am nobal.";
+		String word="Hi";
+		String temp[]=string.split(" ");
+		System.out.println(string.split(" "));
+		for(String s1:temp) {
+			System.out.println(s1);
+		}
+		
+	}
+
+}

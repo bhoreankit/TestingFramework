@@ -1,0 +1,17 @@
+package Package1;
+
+public class TwoWheeler{
+	
+	public int setMaxSpeed(int maxSpeed) {
+		
+		if(maxSpeed > 120) {
+			
+			System.out.println("Two wheeler speed should not be exceed above 120 kmph");
+		}else {
+			
+			Constant.maxSpeed=maxSpeed;
+		}
+		return Constant.maxSpeed;
+	}
+
+}

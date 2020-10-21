@@ -1,0 +1,13 @@
+package Package1;
+
+public class CountCharacterOccurence {
+	
+	public static void main(String[] args)
+    {
+       String string=new String("Hi i am ankit");
+       char ch='a';
+       String str=Character.toString(ch);
+       System.out.println(str);
+    }
+
+}

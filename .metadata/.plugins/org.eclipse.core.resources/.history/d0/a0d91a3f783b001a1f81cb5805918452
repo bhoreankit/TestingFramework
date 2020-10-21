@@ -1,0 +1,25 @@
+package SetPractice;
+
+import java.util.Comparator;
+import java.util.TreeSet;
+
+public class TreeSetPractice {
+	
+	public static void main(String[] args) {
+		
+		TreeSet t=new TreeSet(new MyComparator());
+		
+		/* t.add(15);
+		t.add(10);
+		t.add(5);
+		t.add(0);*/
+		
+		t.add("Ankit");
+		t.add("Manoharrao");
+		t.add("Bhore");
+		
+		System.out.println(t); 
+		
+	}
+
+}

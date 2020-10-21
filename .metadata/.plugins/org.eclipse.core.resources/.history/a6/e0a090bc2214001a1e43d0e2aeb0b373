@@ -1,0 +1,37 @@
+//instance variable and instance method access without creation of object
+
+package AbstractAndInterface;
+
+public class Simple extends B{
+	static int c;
+	
+	/*Simple(int x) {
+		super(x);
+	}*/
+	
+	public Simple() {      //confusion
+		super();
+	}
+		
+	static{
+		c=10;
+		System.out.println("I am static block of simple class "+c);
+	}
+
+	public static void main(String[] args) {
+		//Simple s=new Simple();
+		
+		B b=new B();
+		
+		//b.show();
+		b.normal();
+		/*b.interfaceMethod1();
+		b.m1();
+		b.interfaceMethod2();
+		I2.ankit();
+		System.out.println(I1.b);*/
+		b.interfaceMethod3();
+	}
+
+	
+}

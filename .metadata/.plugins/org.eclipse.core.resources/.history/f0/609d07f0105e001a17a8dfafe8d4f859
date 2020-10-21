@@ -1,0 +1,38 @@
+package Package1;
+
+import java.util.Iterator;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class NaukriPractic {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\om\\Downloads\\Ankit\\Selenium WebDriver\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.naukri.com/");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		String mainwindowhandle = driver.getWindowHandle();
+		String mainwindow = driver.getWindowHandle();
+		
+		/*// close all the pop ups
+		Set<String> popups = driver.getWindowHandles();
+		Iterator<String> it = popups.iterator();
+		
+		while(it.hasNext()) {
+			String popupHandle = it.next().toString();
+			if(!popupHandle.contains(mainwindow)) {
+				driver.switchTo().window(popupHandle);
+				System.out.println("Pop up Title : " + driver.switchTo().window(popupHandle).getTitle());
+				driver.close();				
+			}	
+			System.out.println("The system handle is : " + mainwindowhandle);
+			driver.switchTo().window(mainwindowhandle);
+		
+		}*/
+	}
+
+}

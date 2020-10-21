@@ -1,0 +1,21 @@
+package Package1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class WindowHandlingDemo {
+	
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\om\\Downloads\\Ankit\\Selenium WebDriver\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.canarabank.in");
+		System.out.println("window handle of parent: "+driver.getWindowHandle());
+		//driver.findElement(By.xpath("(//button)[3]")).click();
+		/*driver.switchTo().window(nameOrHandle)
+		driver.findElement(By.xpath("//input[@name='fldLoginUserId']")).sendKeys("Ankit");
+		driver.findElement(By.xpath("//input[@id='fldPassword']")).sendKeys("8793");
+		driver.findElement(By.xpath("//input[@value='SIGN IN']")).click();*/
+	}
+
+}

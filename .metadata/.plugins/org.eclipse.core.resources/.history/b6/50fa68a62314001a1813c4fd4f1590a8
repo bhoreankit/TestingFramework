@@ -1,0 +1,14 @@
+// confusion only a and b capital
+package Package1;
+
+public class StringToUppercase {
+
+	public static void main(String[] args) {
+		String s=new String("ankit bhore");
+		
+		System.out.println(s.toUpperCase());
+		System.out.println(s.substring(0));
+		
+	}
+
+}

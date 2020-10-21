@@ -1,0 +1,30 @@
+import java.util.*;
+public class Test3 {
+
+	public static void main(String[] args) {
+		
+
+		ArrayList l=new ArrayList(4);
+
+		l.add('A');
+		l.add(10);
+		l.add(null);
+		l.add('A');
+		
+		l.remove(0);
+		l.set(1, 2);
+		
+		System.out.println(l);
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+	
+
+}

@@ -1,0 +1,22 @@
+
+public class Employee {
+		
+	String name;
+	int empid;
+	
+	public void display(String name,int id) {
+		
+		System.out.println(name+" "+empid);
+		
+	}
+	public static void main(String[] args) {
+		Employee e=new Employee();
+		
+		e.display("munna",101);
+		
+		
+		//System.out.println(e.name+" "+e.empid);
+		
+	}
+
+}

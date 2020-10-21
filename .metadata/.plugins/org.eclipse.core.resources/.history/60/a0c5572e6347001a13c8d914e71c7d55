@@ -1,0 +1,22 @@
+package SetPractice;
+
+import java.util.Comparator;
+
+public class MyComparator implements Comparator {
+
+	public int compareTo(Object obj1, Object obj2) {
+		Integer e1=(Integer) obj1;
+		Integer e2=(Integer) obj2;
+		
+		if(e1>e2) {
+			return 1;
+		}else if(e1 < e2) {
+			return -1;
+		}else {
+			return 0;
+		}
+			
+	}
+
+	
+}

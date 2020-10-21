@@ -1,0 +1,11 @@
+package com.ankit.parent.child;
+
+public class Parent {
+	
+	public Parent() {
+		
+		System.out.println("Parent Class Constructor Called "
+				+ "By Creating Child Class Object");
+	}
+
+}

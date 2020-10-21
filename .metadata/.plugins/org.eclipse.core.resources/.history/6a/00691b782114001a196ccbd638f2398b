@@ -1,0 +1,6 @@
+package Package1;
+
+public abstract class Bank {
+
+	abstract int getRateOfInterest();
+}

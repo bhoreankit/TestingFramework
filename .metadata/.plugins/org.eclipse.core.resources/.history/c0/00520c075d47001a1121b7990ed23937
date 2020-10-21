@@ -1,0 +1,34 @@
+package TestCases.Regression;
+
+import org.testng.annotations.Test;
+
+import Keywords.Keyword;
+
+public class Regression {
+	@Test
+	public void TC_01() throws InterruptedException {
+		Keyword.openBrowser("Chrome");
+		Keyword.openURL("https://eagercrow.com/Home");
+		Keyword.maximizeBrowser();
+		
+		
+		Thread.sleep(3000);
+		Keyword.clickOnElement("XPATH","(//a[@class='color0-hov'])[1]");
+		Keyword.clickOnElement("XPATH", "(//a[@class='color0-hov'])[2]");
+		Keyword.clickOnElement("XPATH", "(//a[@class='color0-hov'])[3]");
+		Keyword.clickOnElement("LINKTEXT", "Sign In");
+		Thread.sleep(4000);
+		Keyword.clickOnElement("XPATH", "//ul[@class='firebaseui-idp-list']//li[1]");
+		Keyword.enterText("XPATH", "//input[@autocomplete=\"username\"]", "bhoreankit@gmail.com");
+		Keyword.clickOnElement("XPATH", "//button[@type=\"submit\"]");
+		Thread.sleep(3000);
+		Keyword.enterText("XPATH", "//input[@type='password']", "ankit@8793");
+		Keyword.clickOnElement("XPATH", "//button[@type='submit']");
+		Keyword.clickOnElement("XPATH", "(//a[@class='color0-hov'])[2]");
+		Keyword.clickOnElement("XPATH", "//img[@class='lazy']");
+		
+		
+		
+	}
+	
+}

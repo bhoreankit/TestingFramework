@@ -1,0 +1,9 @@
+package Package1;
+
+public class AccuranceOfHi {
+
+	public static void main(String[] args) {
+		String s="Hi i am ankit";
+	}
+
+}

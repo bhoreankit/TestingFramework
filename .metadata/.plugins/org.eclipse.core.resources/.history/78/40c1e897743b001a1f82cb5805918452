@@ -1,0 +1,23 @@
+package SetPractice;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class TreeSetPractice {
+	
+	public static void main(String[] args) {
+		HashSet s=new HashSet();
+		s.add(1);
+		s.add(1);
+		s.add('a');
+		s.add(0);
+		s.add("ankit");
+		
+		s.remove(1);
+		System.out.println(s);
+	}
+
+}

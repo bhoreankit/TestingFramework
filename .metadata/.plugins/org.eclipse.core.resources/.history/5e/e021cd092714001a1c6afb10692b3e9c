@@ -1,0 +1,12 @@
+package Package1;
+
+public class Methods {
+	
+	public void addition(int i, int j) {
+		
+		int result=i+j;
+		
+		System.out.println(result);
+	}
+
+}

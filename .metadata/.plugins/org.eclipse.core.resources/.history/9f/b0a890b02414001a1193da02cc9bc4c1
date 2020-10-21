@@ -1,0 +1,22 @@
+package SetPractice;
+
+import java.util.TreeSet;
+
+public class TreeSetPractice {
+	
+	public static void main(String[] args) {
+		TreeSet t=new TreeSet();
+		
+		t.add('A');
+		t.add('B');
+		t.add('C');
+		t.add('D');
+		t.add('E');
+		t.add('F');
+		t.add('g');
+		t.add('H');
+		System.out.println(t);
+		
+	}
+
+}

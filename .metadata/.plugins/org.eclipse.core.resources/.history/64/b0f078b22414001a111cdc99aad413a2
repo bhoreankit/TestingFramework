@@ -1,0 +1,24 @@
+package Package1;
+
+public class AccessModifier {
+	
+	private int a=40;
+	
+	private void dispaly() {
+		
+		System.out.println("Hello");
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		AccessModifier Ab=new AccessModifier();
+		
+		Ab.dispaly();
+		
+		System.out.println(Ab.a);
+		
+	}
+	
+}

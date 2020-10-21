@@ -1,0 +1,10 @@
+package Package1;
+
+public class Methods {
+	
+	void firstMethod() {
+		
+		System.out.println("This is firstMethod");
+	}
+
+}

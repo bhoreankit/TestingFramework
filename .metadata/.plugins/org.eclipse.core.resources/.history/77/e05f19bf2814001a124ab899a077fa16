@@ -1,0 +1,32 @@
+package Package1;
+
+public abstract class Vehicle {
+	
+	public abstract void start();
+
+}
+
+class Car extends Vehicle{
+	
+	public void start() {
+		
+		System.out.println("Car start with key");
+	}
+	
+}
+class Scooter extends Vehicle{
+	
+	public void start() {
+		
+		System.out.println("Car start with kick");
+		
+	}
+	
+	public static void main(String[] args) {
+		//Vehicle v=new Vehicle();
+		Car c=new Car();
+		c.start();
+	}
+	
+}
+

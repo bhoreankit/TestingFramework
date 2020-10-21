@@ -1,0 +1,38 @@
+package SetPractice;
+
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class TreeSetPractice {
+	
+	public static void main(String[] args) {
+		/*HashSet s=new HashSet();
+		s.add(1);
+		s.add(1);
+		s.add('a');
+		s.add("ankit");
+		s.add(0);
+		s.clear();
+		
+		Iterator ir=s.iterator();
+		while(ir.hasNext()) {
+			System.out.println(ir.next());
+		}*/
+		// Create a HashSet
+	     HashSet<String> hset = new HashSet<String>();
+	 
+	     //add elements to HashSet
+	     hset.add("Chaitanya");
+	     hset.add("Rahul");
+	     hset.add("Tim");
+	     hset.add("Rick");
+	     hset.add("Harry");
+	 
+	     Iterator<String> it = hset.iterator();
+	     while(it.hasNext()){
+	        System.out.println(it.next());	}
+	}
+
+}

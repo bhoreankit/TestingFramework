@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Testing Shastra]">
+  <parameter name="ankit" value="14"/>
+  <parameter name="rollno" value="11"/>
+  <test name="ModuleA(failed)">
+    <parameter name="ankit" value="14"/>
+    <parameter name="rollno" value="11"/>
+    <classes>
+      <class name="FirstSeleniumTest.GroupC">
+        <methods>
+          <include name="m1"/>
+        </methods>
+      </class> <!-- FirstSeleniumTest.GroupC -->
+    </classes>
+  </test> <!-- ModuleA(failed) -->
+</suite> <!-- Failed suite [Testing Shastra] -->

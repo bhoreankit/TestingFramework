@@ -1,0 +1,40 @@
+package TestCases;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import FileUtility.PropertiesFile;
+import Keywords.Constants;
+import Keywords.Keyword;
+
+public class Regression  {
+	@BeforeMethod
+	public void openingSite() {
+		Keyword.openBrowser("Chrome");
+		Keyword.openURL("http://practice.automationtesting.in/");
+		Keyword.maximizeBrowser();
+	}
+
+	@Test
+	public void verifyCustermerLogin() throws InterruptedException {
+		Keyword.clickOnElement("LINKTEXT", "Sign In");
+		Thread.sleep(5000);
+		Keyword.clickOnElement("XPATH", "//ul[@class='firebaseui-idp-list']//li[1]");
+		Keyword.enterText("XPATH", "//input[@autocomplete=\"username\"]", "bhoreankit@gmail.com");
+		Keyword.clickOnElement("XPATH", "//button[@type=\"submit\"]");
+		Thread.sleep(3000);
+		Keyword.enterText("XPATH", "//input[@type='password']", "ankit@8793");
+		Keyword.clickOnElement("XPATH", "//button[text()='Sign In']");
+		Thread.sleep(7000);
+		String name=Keyword.getText("XPATH", "(//div[@class=\"chip\"])[1]");
+		if(name.equals("Ankit Bhore")) {
+			System.out.println("Customer Login Succesfully");
+		}else {
+			System.out.println("Customer Login not Succesfully");
+		}
+	}
+	
+}

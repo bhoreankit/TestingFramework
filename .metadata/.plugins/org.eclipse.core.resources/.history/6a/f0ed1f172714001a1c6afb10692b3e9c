@@ -1,0 +1,21 @@
+package Package1;
+
+public class Methods {
+	int result;
+	public void addition(int i, int j) {
+		
+		result=i+j;
+		
+		System.out.println(result);
+	}
+	
+	public static void main(String[] args) {
+		
+		Methods m=new Methods();
+		m.addition(10,30);
+		
+		System.out.println(m.result);
+		
+	}
+
+}

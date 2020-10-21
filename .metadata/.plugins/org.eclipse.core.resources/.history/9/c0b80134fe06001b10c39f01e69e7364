@@ -1,0 +1,16 @@
+
+public class Practice {
+	
+	String name="Ankit";
+	int salary=3000;
+
+	public static void main(String[] args) {
+		
+		Practice p=new Practice();
+		
+		System.out.println(p.name);
+		
+		
+	}
+
+}

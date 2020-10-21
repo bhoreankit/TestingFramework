@@ -1,0 +1,41 @@
+
+public class Employee1 {
+	
+	int empid;
+	String name;
+	String company;
+	
+	Employee1(int i, String n, String c){
+		
+		this.empid=i;
+		this.name=n;
+		this.company=c;
+		
+	}
+	
+	
+	void display() {
+		
+		System.out.println(empid+" "+name+" "+company);
+		
+	}
+		
+
+	public static void main(String[] args) {
+		
+		Employee1 e1=new Employee1(100,"Ankit","TCS");
+		Employee1 e2=new Employee1(101,"Munna","TCS");
+		Employee1 e3=new Employee1(102,"Pawan","TCS");
+		
+		
+		e1.display();
+		e2.display();
+		e3.display();
+		
+		
+				
+	}
+	 	
+	}
+	
+

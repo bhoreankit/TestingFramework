@@ -1,0 +1,20 @@
+package Package1;
+
+public class Practice {
+
+	public static void main(String[] args) {
+		String s="an4kit bh5e";
+		for (int j = 0; j < args.length; j++) {
+			
+			if(s.charAt(j)>0 && s.charAt(j)<9) {
+				
+				System.out.println(s.charAt(j));
+				
+			}
+			
+		}
+		
+		
+	}
+
+}

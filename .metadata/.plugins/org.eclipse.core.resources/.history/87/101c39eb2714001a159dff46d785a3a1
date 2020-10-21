@@ -1,0 +1,30 @@
+
+public class Employee1 {
+	
+	static int count=0;
+	
+	public void display() {
+		
+		count++;
+		System.out.println(count);
+	}
+
+	public static void main(String[] args) {
+		Employee1 e1=new Employee1();
+		Employee1 e2=new Employee1();
+		Employee1 e3=new Employee1();
+		Employee1 e4=new Employee1();
+		Employee1 e5=new Employee1();
+
+		e1.display();
+		e2.display();
+		e3.display();
+		e4.display();
+		e5.display();
+
+		
+	}
+	 	
+	}
+	
+

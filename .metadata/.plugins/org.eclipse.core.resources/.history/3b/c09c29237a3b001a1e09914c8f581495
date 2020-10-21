@@ -1,0 +1,14 @@
+package Package1;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class WindowHandlingDemo {
+	
+	public static void main(String[] args) {
+		System.setProperty("Webdriver.chrome.driver", "C:\\Users\\om\\Downloads\\Ankit\\Selenium WebDriver\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		
+	}
+
+}

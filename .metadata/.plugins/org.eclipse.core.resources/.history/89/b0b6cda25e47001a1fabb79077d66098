@@ -1,0 +1,29 @@
+package SetPractice;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
+
+public class MapDemo {
+
+	public static void main(String[] args) {
+			
+		HashMap hmap=new HashMap();
+		  hmap.put(12, "Chaitanya");
+	      hmap.put(2, "Rahul");
+	      hmap.put(7, "Singh");
+	      hmap.put(49, "Ajeet");
+	      hmap.put(3, "Anuj");
+	      
+	      Set set=hmap.entrySet();
+	      Iterator ir=set.iterator();
+	  
+	      while(ir.hasNext()) {
+	    	 System.out.println(ir.next()); 
+	      }
+	      
+	      
+	      
+	}
+
+}
